@@ -6,35 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Article page</title>
     <link rel="stylesheet" href="article.css" />
-    <link rel="stylesheet" href="style.css" />
+    
   </head>
   <header>
     <div class="navbar">
       <div id="home"><a href="index.html">Home</a></div>
       <div id="create"><a href="post-suggestion.html">Be Our Creator</a></div>
     </div>
-  </header>
-  <body>
     <h1></h1>
     <h2>by <span></span></h2>
-    <p></p>
+  </header>
+  <body>
+   
+    <p class="content"></p>
     
-    <h3>Create a comment:</h3>
-    <form class="comment">
+    <h3>Leave us a comment:</h3>
+    <form id="commentForm">
       <label
         >E-mail:
-        <input type="email" name="email" />
+        <input type="email" name="email" required />
       </label>
       <label>
         Username:
-        <input type="text" name="username" />
+        <input type="text" name="username"required />
       </label>
       <label>
         Your comment:
-        <textarea name="content"></textarea>
+        <textarea name="content" placeholder="What are your thoughts about this article?"></textarea>
       </label>
       <input type="submit" class="button" value="Send" />
     </form>
+    <p class="hidden">
+      Thank you for your comment!
+    </p>
+    
     <h3> Latest comments:</h3>
 
     <template class="commentslist">
@@ -44,6 +49,10 @@
      </section>
     </template>
     <main></main>
+    <footer>
+      <p>&copy;  Maria-Lavinia Otelea, Copenhagen School of
+        Design and Technology – KEA, 2021</p>
+        </footer>
     <script src="article.js"></script>
   </body>
 </html>

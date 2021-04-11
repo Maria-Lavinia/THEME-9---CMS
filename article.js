@@ -42,4 +42,33 @@ function showPost(data) {
 
   }
 }
+const form = document.querySelector("#commentForm");
+form.addEventListener("submit", handleSubmit);
 
+function handleSubmit(e){
+  e.preventDefault();
+ const payload = {
+  email: form.elements.email.value,
+  username: form.elements.username.value,
+  content: form.elements.content.value,
+ };
+ console.log(payload);
+ fetch(`https://kea21s-5d8f.restdb.io/rest/posts/${articleId}/comments`, {
+    method: "POST",
+    headers: {
+      "x-apikey": "606d5ed3f553500431007503",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
+  .then(res=>res.json())
+  .then((data) => {
+
+    const template = document.querySelector("template.commentslist").content;
+    const copy = template.cloneNode(true);
+    copy.querySelector("h4").textContent = data.username;
+    copy.querySelector("p").textContent = data.content;
+    document.querySelector("main").appendChild(copy);
+    document.querySelector("p.hidden").classList.remove("hidden");
+  });
+}

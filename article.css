@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --main-text-color: #000;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #cfffe5;
+  display: flex;
+  justify-content: baseline;
+  font-size: 20px;
+  margin: 0;
+  font-family: var(--primary-font);
+  margin-left: 0;
+}
+header {
+  background-color: #cfffe5;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--primary-font);
+  animation-name: fade_in;
+  animation-duration: 5s;
+}
+
+h3 {
+  margin-left: 15px;
+  margin-top: 5%;
+}
+h2 {
+  margin-left: 50%;
+}
+h4 {
+  margin: 0;
+}
+a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  opacity: 50%;
+}
+.content {
+  font-family: var(--primary-font);
+  margin-left: 8px;
+  font-size: 20px;
+}
+section {
+  width: 98vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;
+  margin-top: 60px;
+  font-family: var(--secondary-font);
+}
+@keyframes fade_in {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+form {
+  font-size: 20px;
+  border-radius: 4px;
+  border-bottom: 2px solid #cfffe5;
+  padding: 10px;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  margin-bottom: 5%;
+}
+input {
+  display: block;
+  align-self: center;
+}
+textarea {
+  resize: vertical;
+  max-height: 200px;
+  font-size: 20px;
+  border: 2px solid #cfffe5;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+}
+label {
+  align-self: center;
+  padding: 10px;
+}
+
+.button {
+  margin-top: 20px;
+  max-width: 200px;
+}
+.hidden {
+  visibility: hidden;
+  font-family: var(--primary-font);
+  text-align: center;
+}
+.comments {
+  width: 50vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;
+  border-left: 6px solid #4169e1;
+  margin-left: 60px;
+  font-family: var(--secondary-font);
+  margin-top: 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+footer {
+  display: flex;
+  justify-content:flex-end;
+  width: 100%;
+  background-color: #cfffe5;
+  text-align: right;
+  font-size: 15px;
+
+}

@@ -4,14 +4,23 @@
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Poppins", sans-serif;
   --main-text-color: #000;
+  margin: 0;
+  margin-bottom: 0;
 }
 .navbar {
   overflow: hidden;
-  background-color: #cfffe5;;
+  background-color: #cfffe5;
   display: flex;
-  justify-content: space-around;
+  justify-content: baseline;
   font-size: 20px;
+  margin-top: 0;
+  font-family: var(--primary-font);
+}
+body {
   margin: 0;
+}
+header {
+  background-color: #cfffe5;
 }
 
 h1 {
@@ -19,13 +28,12 @@ h1 {
   font-family: var(--primary-font);
   animation-name: fade_in;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 h2,
 h3 {
   margin-left: 15px;
 }
-h4{
+h4 {
   margin: 0;
 }
 a {
@@ -38,7 +46,7 @@ a:hover {
 }
 section {
   width: 98vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;
   margin-top: 60px;
   font-family: var(--secondary-font);
 }
@@ -51,25 +59,32 @@ section {
     opacity: 100%;
   }
 }
-form,
-textarea {
-  display: flex;
-  flex-direction: column;
+form {
   font-size: 20px;
   border: 2px solid #cfffe5;
   border-radius: 4px;
   padding: 10px;
   margin: 10px 0;
-  margin-top: 10%;
- 
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  margin-left: 40%;
+  margin-right: 37%;
+  margin-top: 5%;
 }
-input{
+input {
   display: block;
   align-self: center;
 }
 textarea {
   resize: vertical;
   max-height: 200px;
+  font-size: 20px;
+  border: 2px solid #cfffe5;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
 }
 label {
   align-self: center;
@@ -82,23 +97,20 @@ label {
 }
 .hidden {
   visibility: hidden;
-}
-.comments{
-  width: 50vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;;
-  margin-left: 60px;
-  font-family: var(--secondary-font);
-  margin-top: 0;
-  padding:10px;
-  border-radius:10px;
-
+  font-family: var(--primary-font);
+  text-align: center;
 }
 
-.comment{
-  margin-top: 20px;
+footer {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  background-color: #cfffe5;
+  text-align: right;
+  font-size: 15px;
+}
+.suggestion{
   font-size: 20px;
-  border: 2px solid #cfffe5;
- text-align: left;
+  font-family: var(--primary-font);
+text-align: center;
 }
