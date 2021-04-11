@@ -29,9 +29,16 @@ h1 {
   animation-name: fade_in;
   animation-duration: 5s;
 }
-h2,
-h3 {
+h2{
   margin-left: 15px;
+ 
+}
+h3{
+  margin-left: 15px;
+  color: #4169e1;
+  opacity: 50%;
+  margin-left: 20px;
+  margin-top: 0;
 }
 h4 {
   margin: 0;
@@ -43,6 +50,7 @@ a {
 }
 a:hover {
   opacity: 50%;
+  text-decoration: underline;
 }
 section {
   width: 98vw;
@@ -99,6 +107,7 @@ label {
   visibility: hidden;
   font-family: var(--primary-font);
   text-align: center;
+  margin-left: 30px;
 }
 
 footer {
