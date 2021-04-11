@@ -29,11 +29,10 @@ h1 {
   animation-name: fade_in;
   animation-duration: 5s;
 }
-h2{
+h2 {
   margin-left: 15px;
- 
 }
-h3{
+h3 {
   margin-left: 15px;
   color: #4169e1;
   opacity: 50%;
@@ -53,7 +52,11 @@ a:hover {
   text-decoration: underline;
 }
 section {
-  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  margin-left: 30px;
+  margin-right: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;
   margin-top: 60px;
   font-family: var(--secondary-font);
@@ -118,8 +121,14 @@ footer {
   text-align: right;
   font-size: 15px;
 }
-.suggestion{
+.suggestion {
   font-size: 20px;
   font-family: var(--primary-font);
-text-align: center;
+  text-align: center;
+}
+img {
+  width: max(20vw, 300px);
+  height: auto;
+  padding-right: 1rem;
+  padding-left: 10px;
 }
