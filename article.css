@@ -53,13 +53,10 @@ a:hover {
   margin-left: 40px;
   margin-right: 40px;
   font-size: 20px;
-
 }
 section {
-  width: 98vw;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #cfffe5;
-  margin-top: 60px;
-  font-family: var(--secondary-font);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 @keyframes fade_in {
   from {
@@ -117,16 +114,21 @@ label {
   border-left: 6px solid #4169e1;
   margin-left: 60px;
   font-family: var(--secondary-font);
-  margin-top: 0;
   padding: 10px;
   border-radius: 10px;
+  margin-top: 10px;
 }
 footer {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   width: 100%;
   background-color: #cfffe5;
   text-align: right;
   font-size: 15px;
-
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }

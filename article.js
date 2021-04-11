@@ -52,6 +52,8 @@ function handleSubmit(e){
   username: form.elements.username.value,
   content: form.elements.content.value,
  };
+ document.querySelector("input[type=submit]").disabled = true;
+
  console.log(payload);
  fetch(`https://kea21s-5d8f.restdb.io/rest/posts/${articleId}/comments`, {
     method: "POST",
@@ -70,5 +72,10 @@ function handleSubmit(e){
     copy.querySelector("p").textContent = data.content;
     document.querySelector("main").appendChild(copy);
     document.querySelector("p.hidden").classList.remove("hidden");
+   
+    document.querySelector("input[type=submit]").disabled = false;
+    form.elements.email.value = "";
+    form.elements.username.value = "";
+    form.elements.content.value = "";
   });
 }
